@@ -1,5 +1,5 @@
 {
-  "name": "iwubida-native-echarts",
+  "name": "@iwubida/iwubida-native-echarts",
   "version": "0.5.0",
   "description": "echarts for react-native",
   "main": "src/index.js",
