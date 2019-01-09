@@ -6,7 +6,24 @@
   
 ## install
 
-$ npm install native-echarts --save
+$ npm install iwubida-native-echarts --save
+
+## Android 打包
+
+在项目根目录文件夹下使用命令：
+
+打包 Android 需要先把 tpl.html 下载下来拷贝到 app/src/main/assets 目录中。
+
+- 以下是 mac && linux
+
+```bash
+mkdir android/app/src/main/assets/ && cp node_modules/youngjuning-native-echarts/src/components/Echarts/tpl.html android/app/src/main/assets/echarts/
+```
+- 以下是 windows
+
+```bash
+md android/app/src/main/assets/ && copy node_modules/youngjuning-native-echarts/src/components/Echarts/tpl.html android/app/src/main/assets/echarts/
+```
 
 ## Usage
 
