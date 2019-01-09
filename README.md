@@ -6,7 +6,7 @@
   
 ## install
 
-$ npm install iwubida-native-echarts --save
+$ npm install @iwubida/native-echarts --save
 
 ## Android 打包
 
