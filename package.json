@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/iwubida/react-native-echarts#readme",
   "dependencies": {
-    "echarts": "3.2.3"
+    "echarts": "4.2.0-rc.2"
   }
 }
