@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { WebView, View, StyleSheet, Platform } from "react-native";
+import { View, Platform } from "react-native";
 import renderChart from "./renderChart";
-import echarts from "./echarts.min";
+import WebView from "react-native-webview";
 
 export default class App extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ export default class App extends Component {
           injectedJavaScript={renderChart(this.props)}
           style={{
             height: this.props.height || 400,
-            backgroundColor: this.props.backgroundColor || "transparent"
+            backgroundColor: this.props.backgroundColor || "transparent",
           }}
           scalesPageToFit={Platform.OS !== "ios"}
           originWhitelist={["*"]}
@@ -37,7 +37,7 @@ export default class App extends Component {
               ? require("./tpl.html")
               : { uri: "file:///android_asset/tpl.html" }
           }
-          onMessage={event =>
+          onMessage={(event) =>
             this.props.onPress
               ? this.props.onPress(JSON.parse(event.nativeEvent.data))
               : null
